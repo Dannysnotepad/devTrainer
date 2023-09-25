@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dev Trainer | Signup</title>
+  <link rel="stylesheet" href="../css/Signup.css">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+  <header>
+    <h1>devTrainer</h1>
+  </header>
+  <center class="modal hidden">
+    <div class="form">
+      <div class="note">
+        <h3>Account created successfully</h3>
+        <span class="nite">Note:</span>
+        <span class="notes">
+          This is going to be your login ID, so copy it as save it because you're going to need it when you want to Login
+        </span>
+      </div>
+      <div class="userIdBackground">
+        <span id="userId"></span>
+        <span class="material-symbols-outlined hi">
+          content_copy
+        </span>
+      </div>
+    </div>
+  </center>
+  <div class="overlay hidden"></div>
+  <main>
+    <center>
+    <form class="formm" action="" method="post">
+      <label>
+        <p>NAME</p>
+        <input type="text" id="userName" placeholder="eg. john doe">
+        <span class="errorTxt3"></span>
+      </label>
+      <label>
+        <p>EMAIL</p>
+        <input type="email" id="userEmail" placeholder="eg. johndoe@gmail.com">
+        <span class="errorTxt2"></span>
+      </label>
+      <label>
+        <p>PASSWORD</p>
+        <input type="password" id="userPassword" placeholder="Create your unique password">
+        <span class="errorTxt1"></span>
+      </label>
+      <label>
+        <p>CONFIRM PASSWORD</p>
+        <input type="password" id="confirmPassword" placeholder="Confirm password"/>
+        <span class="errorTxt"></span>
+      </label>
+      <button id="submit">Signup</button>
+      <span class="forget"><a href="Login.html">Already have an account?...login</a></span>
+    </form>
+    </center>
+  </main>
+  <script src="../js/Signup.js"></script>
+</body>
+</html>
