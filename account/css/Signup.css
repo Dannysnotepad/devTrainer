@@ -1,46 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@700&family=Mooli&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
 *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
-body {
-    background-color: #121212;
+body{
+  width: 100%vw;
 }
 header{
-  margin-top: 0px;
-  color: #C9BD97;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #5F5989;
   font-weight: bold;
+  margin-bottom: 20px;
+  height: 55px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
 }
 h1{
-  margin-top: 0px;
-  font-size: 35px;
+  font-size: 30px;
+}
+center{
+  text-align: center;
+  padding: 8px;
+}
+a{
+  text-decoration: none;
 }
 form{
-  background-color: #333;
+  background-color: whitesmoke;
   border-radius: 10px;
   margin-top: 50px;
-  border-top: 5px solid #C9BD97;
+  border-top: 5px solid #5F5989;
   padding: 10px;
   padding-bottom: 20px;
 }
 .intro {
-  color: #C9BD97;
+  color: #5F5989;
   font-size: 30px;
   text-align: left;
   padding-bottom: 0;
 }
 label{
-  color: whitesmoke;
+  color: #5F5989;
   font-weight: bold;
 }
 label p{
   margin-bottom: 5px;
   text-align: left;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .material-symbols-rounded{
-  color: #C9BD97;
+  color: #5F5989;
   font-size: 15px;
 }
 .errorTxt3 {
@@ -75,7 +87,7 @@ input[type=number],
 input[type=text],
 input[type=email],
 input[type=password]{
-  background-color: #212121;
+  background-color: #fff;
   margin-bottom: 15px;
   padding-right: 10px;
   padding-left: 10px;
@@ -86,13 +98,13 @@ input[type=password]{
   display: inline-block;
   outline: none;
   border: none;
-  color: #9E9FA9;
+  color: #7F7C8D;
 }
 input[type-number]:focus,
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus{
-  border: 1px solid #C9BD97;
+  border: 1px solid #5F5989;
 }
 
 input[type=text]::placeholder,
@@ -102,69 +114,60 @@ input[type=password]::placeholder{
 }
 
 #submit{
-  background: linear-gradient(to top left , #c75a3a, #d1f2a3);
+  background: linear-gradient(to top left , #5F5989, #7F7C8D);
   font-family: 'Mooli', sans-serif;
   margin-bottom: 15px;
   cursor: pointer;
   user-select: none;
   border-radius: 5px;
+  color: #fff;
   border: none;
-  width: 97%;
+  width: 90%;
   height: 45px;
   font-size: 18px;
-  color: #333;
-  transition: background 1s;
+  transition: background 1s, color 1s, border 1s;
 }
-#submit:hover{
-  background: linear-gradient(to top left , #d1f2a3, #c75a3a);
+#submit:hover, #submit:active{
+  background: #fff;
+  border: 2px solid #5F5989;
+  color: #5F5989;
 }
 
 .forget{
-  
   font-weight: bold;
   font-size: 17px;
 }
 .forget > a{
   text-align: left;
-  color: #C9BD97;
+  color: #5F5989;
 }
 
 .signup{
-  margin-left: 70px;
+  margin-left: 30px;
   font-weight: bold;
   font-size: 17px;
   margin-right: 0;
 }
 .signup > a{
   text-align: right;
-  color: #C9BD97;
-}
-@media only screen and (min-width: 720px) {
-  body{
-    padding: 90px;
-  }
-  label p{
-    margin-left: 30px;
-  }
-  #submit{
-    width: 93%;
-  }
+  color: #5F5989;
 }
 
+/******modal*********/
 
 .form{
   margin-right: 20px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: whitesmoke;
   border-radius: 10px;
   margin-top: 50px;
-  border-top: 5px solid #C9BD97;
+  border-top: 5px solid #5F5989;
   padding: 10px;
   padding-bottom: 20px;
 }
 h3{
   text-align: center;
-  color: #9E9FA9;
+  color: #5F5989;
 }
 .note{
   text-align: justify;
@@ -172,17 +175,17 @@ h3{
 }
 .nite {
   font-weight: bold;
-  color: #C9BD97;
+  color: #5F5989;
   font-size: 25px;
   padding-bottom: 0;
 }
 .notes{
-  color: #C9BD97;
+  color: #5F5989;
   font-size: 17px;
 }
 
 .userIdBackground{
-  background-color: #121212;
+  background-color: #5F5989;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
@@ -191,7 +194,7 @@ h3{
   margin-right: 50px;
   margin-left: 50px;
   height: 25px;
-  color: #9E9FA9;
+  color: whitesmoke;
 }
 #userId{
   font-family: 'Courier New', Courier, monospace;
@@ -221,4 +224,26 @@ h3{
 .hidden {
   display: none;
 }
+
+
+
+@media only screen and (min-width: 720px) {
+  center{
+    padding: 180px;
+  }
+  header{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  label p{
+    margin-left: 35px;
+  }
+  #submit{
+    width: 90%;
+    display: block;
+    margin-left: 30px;
+  }
+}
+
 

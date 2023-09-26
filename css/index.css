@@ -1,25 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@700&family=Mooli&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 body{
-  padding: 0px;
+  width: 100%vw;
+}
+header{
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #5F5989;
+  font-weight: bold;
+  margin-bottom: 40px;
+  height: 55px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+}
+h1{
+  font-size: 30px;
+}
+section{
+  text-align: center;
+  padding: 8px;
+}
+a{
+  text-decoration: none;
 }
 
 
-
-
-#showcase{
-  min-height:400px;
-  background:url('../img/showcase.jpg') no-repeat;
-  background-position: center;
-  background-size: cover;
-  text-align:center;
-  color:#ffffff;
+.firstView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.firstView > img{
+  height: 100%vh;
+  width: 95%;
+  margin-bottom: 15px;
+}
+.firstView > h3{
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+.firstView > h3 > span{
+  color: #B1AEC9;
+}
+.firstView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.firstView > h4{
+  font-size: 20px;
+  color: #7F7C8D;
+  margin-bottom: 25px;
+}
+.firstView > .hr{
+  border: 1px solid #C6C7CE;
+  margin-left: 50%;
+  width: 60%;
+}
+.firstView .ri {
+  margin-top: 15px;
+  margin-right: 50%;
 }
 
-#showcase h1{
-  margin-top:100px;
-  font-size:55px;
-  margin-bottom:10px;
+/*******SECOND VIEW***********/
+
+.secondView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.secondView > img{
+  height: 100%vh;
+  width: 95%;
+  margin-bottom: 0px;
+}
+.secondView > h3{
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+.secondView > h3 > span{
+  color: #B1AEC9;
+}
+.secondView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.secondView > h4{
+  font-size: 20px;
+  color: #7F7C8D;
+  margin-bottom: 25px;
+}
+.secondView > .hr{
+  border: 1px solid #C6C7CE;
+  margin-left: 50%;
+  width: 60%;
+}
+.secondView > .ri {
+  margin-top: 15px;
+  margin-right: 50%;
 }
 
-#showcase p{
-  font-size:20px;
+/************THIRD VIEW***********/
+
+.thirdView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.thirdView > img{
+  height: 100%vh;
+  width: 95%;
+  margin-bottom: 0px;
+}
+.thirdView > h3{
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+.thirdView > h3 > span{
+  color: #B1AEC9;
+}
+.thirdView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.thirdView > h4{
+  font-size: 20px;
+  color: #7F7C8D;
+  margin-bottom: 25px;
+}
+.thirdView > .hr{
+  border: 1px solid #C6C7CE;
+  margin-left: 50%;
+  width: 60%;
+}
+.thirdView > .ri {
+  margin-top: 15px;
+  margin-right: 50%;
+}
+
+/*********FOURTH VIEW**********/
+
+.fourthView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.fourthView > img{
+  height: 100%vh;
+  width: 95%;
+  margin-bottom: 0px;
+}
+.fourthView > h3{
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+.fourthView > h3 > span{
+  color: #B1AEC9;
+}
+.fourthView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.fourthView > h4{
+  font-size: 20px;
+  color: #7F7C8D;
+  margin-bottom: 25px;
+}
+.fourthView > .hr{
+  border: 1px solid #C6C7CE;
+  margin-left: 50%;
+  width: 60%;
+}
+.fourthView > .ri {
+  margin-top: 15px;
+  margin-right: 50%;
+}
+
+/**********FIFTH VIEW*********/
+
+.fifthView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.fifthView > img{
+  height: 100%vh;
+  width: 95%;
+  margin-bottom: 0px;
+}
+.fifthView > h3{
+  font-size: 35px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  
+}
+.fifthView > h3 > span{
+  color: #B1AEC9;
+}
+.fifthView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+.fifthView > h4{
+  font-size: 20px;
+  color: #7F7C8D;
+  margin-bottom: 25px;
+}
+.fifthView > .hr{
+  border: 1px solid #C6C7CE;
+  margin-left: 50%;
+  width: 60%;
+}
+.fifthView > .ri {
+  margin-top: 15px;
+  margin-right: 50%;
+}
+
+/*******sixth vuew*******/
+.sixthView{
+  height: 100%vh;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.sixthView > p{
+  font-size: 18px;
+  color: #7F7C8D;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+#submit{
+  background: linear-gradient(to top left , #5F5989, #7F7C8D);
+  font-family: 'Mooli', sans-serif;
+  margin-bottom: 15px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  width: 50%;
+  height: 45px;
+  font-size: 18px;
+  transition: background 1s, color 1s, border 1s;
+}
+#submit:hover, #submit:active{
+  background: #fff;
+  border: 2px solid #5F5989;
+  color: #5F5989;
+}
+@media only screen and (min-width: 720px) {
+  section{
+    padding: 90px;
+  }
+  header{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  #submit{
+    width: 30%;
+  }
 }

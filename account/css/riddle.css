@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat:wght@700&family=Mooli&family=Roboto&family=Roboto+Mono&family=Ubuntu:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 100%vw;
+}
+header{
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #5F5989;
+  font-weight: bold;
+  margin-bottom: 20px;
+  height: 55px;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+}
+h1{
+  font-size: 30px;
+}
+center{
+  text-align: center;
+  padding: 8px;
+}
+a{
+  text-decoration: none;
+}
+form{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-top: 50px;
+  border-top: 5px solid #5F5989;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+h2{
+  padding: 18px;
+  margin-bottom: 15px;
+}
+.intro {
+  color: #5F5989;
+  font-size: 30px;
+  text-align: left;
+  padding-bottom: 0;
+}
+.riddle{
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: justify;
+  font-weight: lighter;
+  color: #5F5989;
+  font-size: 20px;
+}
+label{
+  color: #5F5989;
+  font-weight: bold;
+}
+label p{
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 30px;
+}
+
+input[type=text]{
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  color: #7F7C8D;
+}
+
+input[type=text]:focus{
+  border: 1px solid #5F5989;
+}
+
+
+
+#submit{
+  background: linear-gradient(to top left , #5F5989, #7F7C8D);
+  font-family: 'Mooli', sans-serif;
+  margin-bottom: 15px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  width: 90%;
+  height: 45px;
+  font-size: 18px;
+  transition: background 1s, color 1s, border 1s;
+}
+#submit:hover, #submit:active{
+  background: #fff;
+  border: 2px solid #5F5989;
+  color: #5F5989;
+}
+
+.forget {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.forget>a {
+  text-align: left;
+  color: #5F5989;
+}
+.errorTxt {
+  margin-top: 0;
+  text-align: center;
+  color: red;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.signup{
+  margin-left: 70px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-right: 0;
+}
+.signup > a{
+  text-align: right;
+  color: #5F5989;
+}
+
+@media only screen and (min-width: 720px) {
+  center{
+    padding: 180px;
+  }
+  header{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+  }
+  label p{
+    margin-left: 35px;
+  }
+  #submit{
+    width: 90%;
+    display: block;
+    margin-left: 30px;
+  }
+}

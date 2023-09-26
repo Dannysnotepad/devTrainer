@@ -4,29 +4,15 @@ let userId = document.getElementById('userId')
 let userPassword = document.getElementById('userPassword')
 let form = document.querySelector('form')
 let submit = document.getElementById('submit')
-let url = '../Home.html'
-let userCredentials = localStorage.getItem('userCredentials') ? JSON.parse(localStorage.getItem('userCredentials')) : [];
 
 //function to validate inputs
 function checkCredentials(){
-  console.log(userCredentials)
-  
-  let error = document.querySelector('.errorTxt2')
-  let decryptedPassword = atob(userCredentials[0]. encryptedPassword)
   
   if (userId.value == '' || isNaN(userId.value)){
     return false
   }
   
-  let value = userId.value
-  let filteredId = userCredentials.filter((userCredentials) => {
-    return userCredentials.id == value
-  }).map((userCredentials) => {
-    return userCredentials.id
-  })
-  
-  
-  if (filteredId == userId.value && decryptedPassword == userPassword.value ){
+  /*if (filteredId == userId.value && decryptedPassword == userPassword.value ){
     
     location.replace(url)
   }else if(filteredId != userId.value){
@@ -52,7 +38,7 @@ function checkCredentials(){
     }, 2000)
     
     userPassword.focus()
-  }
+  }*/
 }
 
 

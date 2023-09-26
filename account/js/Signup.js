@@ -7,28 +7,11 @@ let confirmPassword = document.getElementById('confirmPassword')
 let submit = document.getElementById('submit')
 let form = document.querySelector('form')
 let formm = document.querySelector('.form')
-let url = 'Login.html'
-let userCredentialsArray = []
-let idTxt = document.getElementById('userId')
-let copyTxt = document.querySelector('.hi')
 
 function copy() {
-  userCredentials.id.select
-  navigator.clipboard.writeText(userCredentials.id)
-
-  idTxt.textContent = 'Id copied'
-  setTimeout(() => {
-    idTxt.textContent = userCredentials.id
-  }, 000)
-
-  redirect()
+  
 }
 
-
-
-copyTxt.addEventListener('click', () => {
-  copy()
-})
 
 /*MODAL*/
 const modal = document.querySelector(".modal");
@@ -38,7 +21,6 @@ const overlay = document.querySelector(".overlay");
 const closeModal = function() {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
-  redirect()
 };
 
 // close the modal when the close button and overlay is clicked
@@ -171,26 +153,7 @@ function validateFields(){
     confirmPassword.focus()
     return false
   }
-  
-  saveToDB()
-}
-
-//function to create, save and encrypt user credentials
-function saveToDB(){
-  let value = userPassword.value
-  let userFullName = userName.value
-  let userEmailAddress = userEmail.value
-  let encryptedPassword = btoa(value)
-  let userCredentials = {
-    userFullName,
-    userEmailAddress,
-    encryptedPassword,
-    id: Date.now()
-  }
-  userCredentialsArray.push(userCredentials)
-  localStorage.setItem('userCredentials', JSON.stringify(userCredentialsArray))
-  
-  idTxt.textContent = userCredentials.id
+  openModal()
 }
 
 //function to empty inputfields if save == success
@@ -200,7 +163,6 @@ function redirect(){
   userPassword.value = ''
   confirmPassword.value = ''
   
-  location.replace(url)
 }
 
 formm.addEventListener('submit', (e) => {
@@ -212,5 +174,4 @@ form.addEventListener('submit', (e) => {
 
 submit.addEventListener('click', () => {
   validateFields()
-  openModal()
 })
