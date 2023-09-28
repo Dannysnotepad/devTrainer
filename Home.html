@@ -14,7 +14,40 @@
 
 <body>
   <header>
-    <h1>devTrainer</h1>
+    <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">devTrainer</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="Home.html">Home</a></li>
+        <li class="services">
+          <a href="learn/learn.html">Learn</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="/">Frontend</a></li>
+            <li><a href="/">Backend</a></li>
+            <li><a href="/">Machine Learning</a></li>
+            <li><a href="/">Software Development</a></li>
+            <li><a href="/">API design</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="account/Logout.html">Logout</a></li>
+        <li><a href="/">Developer</a></li>
+      </div>
+    </ul>
+  </nav>
   </header>
   <center>
     <section>
@@ -32,6 +65,6 @@
     <!---<p><a href="">Developer</a></p>
     <p class="footer-txt"><b class="foot">devTrainer &copy;</b> 2023.</p>-->
   </footer>
-  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
