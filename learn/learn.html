@@ -1,14 +1,100 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="description" content="A learning platform for developers, where they can learn, practice, revise and get resources">
+	  <!--<meta name="keywords" content="web design, affordable web design, professional web design"-->
+  <title>Dev Trainer | Home</title>
+  <link rel="stylesheet" href="css/learn.css">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
+  <header>
+    <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">devTrainer</div>
 
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="Home.html">Home</a></li>
+        <li class="services">
+          <a href="learn/learn.html">Learn</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="/">Frontend</a></li>
+            <li><a href="/">Backend</a></li>
+            <li><a href="/">Machine Learning</a></li>
+            <li><a href="/">Software Development</a></li>
+            <li><a href="/">API design</a></li>
+          </ul>
+
+        </li>
+        <li>
+          <a href="practice/practice.html">Practice</a></li>
+          <li class="services">
+            <a href="quiz_area/quiz_area.html">Quiz Area</a>
+          
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="/">Free time</a></li>
+              <li><a href="/">HotLap</a></li>
+            </ul>
+          
+          </li>
+          
+        <li><a href="account/Logout.html">Logout</a></li>
+        <li><a href="/">Developer</a></li>
+      </div>
+    </ul>
+  </nav>
+  </header>
+  <center>
+    <section>
+      <h2>Pick any course of your choice below, and begin to explore</h2>
+      <div class="firstView">
+        <h4>Frontend Development</h4>
+        <span>Learn to build the view / UI (user interface / interaction) area of a website</span>
+        <button id="submit">Start Course</button>
+      </div>
+      <div class="firstView">
+        <h4>Backend Development</h4>
+        <span>Learn to build the behind the scenes () area of a website</span>
+        <button id="submit">Start Course</button>
+      </div>
+      <div class="firstView">
+        <h4>API Design</h4>
+        <span>Learn to build / design APIs (Application Programming Interface) of websites</span>
+        <button id="submit">Start Course</button>
+      </div>
+      <div class="firstView hih">
+        <h4>Software Development</h4>
+        <span>Learn to build / develop high standard softwares</span>
+        <button id="submit">Start Course</button>
+      </div>
+      <div class="firstView">
+        <h4>Machine Learning / AI</h4>
+        <span>Learn to build / design Machine learning models and alogrithim, and Artificial intelligence bots</span>
+        <button id="submit">Start Course</button>
+      </div>
+    </section>
+  </center>
+  <footer>
+    <!---<p><a href="">Developer</a></p>
+    <p class="footer-txt"><b class="foot">devTrainer &copy;</b> 2023.</p>-->
+  </footer>
+  <script src="js/home.js"></script>
 </body>
-
 </html>
